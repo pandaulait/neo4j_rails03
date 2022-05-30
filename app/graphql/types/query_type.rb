@@ -13,5 +13,18 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :prefecture, Types::PrefectureType, null: true do
+      description "Find prefecture by ID" #省略可
+      argument :id, ID, required: true
+    end
+
+    def prefecture(id:)
+      Prefecture.find(id)
+    end
+
+    def prefectures(page: nil, items: nil)
+      Prefecture.all
+    end
   end
 end
