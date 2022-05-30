@@ -1,0 +1,6 @@
+development:
+  type: http
+  url: http://neo4j:DT4yPCMh4P5Wb1W-BvN7kXf8fRcpYw744_FU1iKL-1M@localhost:7474
+test:
+  type: http
+  url: http://[username]:[password]@localhost:7474
